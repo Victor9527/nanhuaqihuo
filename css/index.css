@@ -1,0 +1,319 @@
+/*图片宽度640px*/
+*{
+	margin: 0;padding: 0;
+		
+}
+li{list-style: none;}
+
+
+/*头部*/
+.head{
+	height: 80px;
+	background: white;
+	position: relative;
+}
+.head-left{
+	width: 420px;
+	position: absolute;
+	height: 100px;
+	background: url('../img/logo.png') no-repeat center;
+}
+.head-right{
+
+	position:relative;
+	right: 0;
+	margin-left: 700px;
+	
+	
+}
+.bewm{
+	display: none;
+	position: absolute;
+	right: 340px;
+	top: 40px;
+}
+.sewm:hover+.bewm{
+	display: block;
+}
+.wenzi{
+	width: 228px;
+	height: 50px;
+	position: absolute;
+	right: 660px;
+}
+.wenzi>img{
+	width:100% ;
+	height: 100%;
+	
+}
+/*轮播图*/
+.lunbo{
+	width: 100%;
+	height: 500px;
+	background:#0B3E80 ;
+	overflow: hidden;
+}
+.nav{
+	width: 100%;
+	height: 50px;
+	
+	line-height: 35px;
+	padding-left: ;
+	padding-left:150px;
+
+	
+	
+	
+}
+.nav li{
+	margin-top: 10px;
+	text-align: center;
+	float: left;
+	margin-left: 15px;
+	color: white;
+	font-size: 0.9em;
+	
+	
+}
+.nav li:hover{
+	background: orange;
+}
+.nav li a {
+	color: white;
+	text-decoration: none;
+}
+.banner{
+	width: 100%;height: 27.3vw;
+	overflow: hidden;
+	position: relative;
+	left:0 ;
+	
+	
+}
+.banner button{
+	top: 100px;
+	width:90px ;
+	height: 95px;
+	border: none;
+	
+}
+#btn-left{
+	background: url('../img/btn-left.png') no-repeat center;
+	
+	position: absolute;
+}
+#btn-right{
+	position: absolute;
+	background: url('../img/btn-right.png') no-repeat center;
+	right: 0;
+}
+.banner li{
+	width: 100%;
+	float:left;
+}
+.banner a{
+	width: 100vw;height: 27.3vw;
+	display: block;
+	background: norepeat center 0;
+	
+	 background-size: 100% 100%;
+}
+button{
+	position: absolute;
+}
+.huodong{
+	background: #f3f3f3;
+	width: 100%;
+	height:60px
+}
+.huodong img:first-child{
+	margin-left:200px ;
+}
+.huodong img{
+	
+	margin-top: -50px;
+}
+.hongkong{
+	margin: 20px 0;
+	width: 100%;
+	height:268px;
+	background: #F3F3F3;
+}
+.hongkong>div:first-child{
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 300px;
+	height: 50%;
+	border-right: 1px dotted gray;
+}
+.hongkong>div:nth-child(2){
+	width: 396px;
+	height: 100%;
+}
+.hongkong>div:nth-child(2) img{
+	
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.hongkong>div{
+	
+	float: left;
+}
+
+
+/*数据*/
+.shuju{
+	margin-top: 40px;
+	height: 300px;
+}
+.data{
+	float: left;
+	margin:0 40px 0 100px;
+	border: 1px solid gray;
+}
+#data-list li{
+	width: 18.2vw;
+	height: 2.3vw;
+	display: block;
+	border-bottom: 1px solid gray;
+	line-height: 2.3vw;
+	
+}
+#data-list li span{
+	display: inline-block;
+	width: 5.5vw;
+	height: 2.3vw;
+	text-align: center;
+	border-left: 1px solid white;
+	
+}
+#data-list li span:first-child{
+	width: 6.93vw;
+}
+#data-list li:nth-child(1){
+	color: white;
+ 	
+	background: #00A0DA;
+}
+#data-list li:not(:first-child) span{
+	border-left: 1px solid gray;
+	display: inline-block;
+}
+#data-list li:not(:first-child) span:nth-child(1){
+	color: gray;
+}
+#data-list li:not(:first-child) span:nth-child(2){
+	color: blue;
+	float: right;
+}
+#data-list li:not(:first-child) span:nth-child(3){
+	color: red;
+	float: right;	
+}
+/*折线图*/
+	#box{
+		width: 25.8vw;height: 18vw;
+		float: left;
+		margin-right: 60px;
+		/*background: red;*/
+	}
+/*日期*/
+.date{
+	width: 18vw;height: 11.7vw;
+	float: left;
+	
+}
+.month{
+	width: 100%;
+	height: 3.4vw;
+	background: #014083;
+	color: white;
+	font-size: 1.2em;
+	line-height: 3.4vw;
+	text-align: center;
+}
+.day{
+	width:100% ;
+	height: 8.3vw;
+	font-size: 2.5em;
+	color: gray;
+	border: 1px solid gray;
+	text-align: center;
+	/*line-height: 8.3vw;*/
+	
+	
+}
+.day a {
+	text-decoration: none;
+	font-size: 10px;
+}
+/*.导航*/
+.daohang{
+	width: 1200;
+	height: 130px;
+	background: #f3f3f3;
+	padding-left: 100px;
+	
+}
+.daohang li{
+	float: left;
+}
+.daohang ul:nth-child(1) li{
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.daohang ul:nth-child(1) li:hover{
+	
+	color: white;
+	background: blue;
+}
+.daohang ul:nth-of-type(2),.daohang ul:nth-of-type(3){
+	margin-top: 20px;
+}
+.daohang ul:nth-of-type(2) li,.daohang ul:nth-of-type(3) li{
+	color: gray;
+	
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+/*尾部*/
+.foot{
+	width:100% ;
+	height: 100px;
+	background: black;
+	color: white;
+	padding-top: 20px;
+	
+}
+.footleft{
+	width: 442px;height: 100px;
+	float: left;
+	margin-left: 50px;
+	font-size: 0.9em;
+	opacity: 0.5;
+}
+.footmain{
+	width: 250px;height: 100px;
+	float: left;
+	opacity: 0.5;
+}
+.footmain div{
+	width: ;
+	height: ;
+	float: left;
+}
+.footmain div img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solie ;
+}
+.footright{
+	width: 183px;height: 100px;
+	float: left;
+	opacity: 0.5;
+}
+
